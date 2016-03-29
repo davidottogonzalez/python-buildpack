@@ -228,6 +228,14 @@ sub-env $BIN_DIR/steps/geo-libs
 # GDAL support.
 source $BIN_DIR/steps/gdal
 
+# Install sasl through Curl
+echo "Trying custom"
+curl -O -L ftp://ftp.cyrusimap.org/cyrus-sasl/cyrus-sasl-2.1.26.tar.gz
+tar xzf cyrus-sasl-2.1.2.26.tar.gz
+cd cyrus-sasl-2.1.26.tar.gz
+./configure && make install
+echo "Done custom"
+
 # Install dependencies with Pip.
 source $BIN_DIR/steps/pip-install
 
