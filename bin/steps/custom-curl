@@ -1,8 +1,8 @@
 bpwatch start custom-curl
 
 echo "Trying custom"
-ls .heroku/python/lib/
-ls .heroku/python/lib/python2.7/site-packages
+cp -a precompiled_python/* .heroku/python/lib/python2.7/site-packages/
+ls .heroku/python/lib/python2.7/site-packages/
 # sudo apt-get install -y libsasl2-dev
 echo "Done custom"
 
