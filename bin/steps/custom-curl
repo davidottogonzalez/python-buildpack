@@ -14,6 +14,8 @@ cd $CACHE_DIR/.python-sasl/sasl
 ./configure --prefix=$CACHE_DIR/.python-sasl/lib-sasl > /dev/null
 make PROCESSEDEXAMPLEFILES="" install > /dev/null
 
+cp -R $CACHE_DIR/.python-sasl/lib-sasl $BUILD_DIR/.python-sasl/lib-sasl
+
 cd - > /dev/null
 # cp -a precompiled_python/* .heroku/python/lib/python2.7/site-packages/
 # ls .heroku/python/lib/python2.7/site-packages/
