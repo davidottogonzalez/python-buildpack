@@ -2,8 +2,9 @@ bpwatch start custom-curl
 
 echo "Trying custom"
 curl -O -L ftp://ftp.cyrusimap.org/cyrus-sasl/cyrus-sasl-2.1.26.tar.gz
-tar xzf cyrus-sasl-2.1.2.26.tar.gz
-cd cyrus-sasl-2.1.26.tar.gz
+tar xzf cyrus-sasl-2.1.26.tar.gz
+rm cyrus-sasl-2.1.26.tar.gz
+cd cyrus-sasl-2.1.26
 ./configure && make install
 # cp -a precompiled_python/* .heroku/python/lib/python2.7/site-packages/
 # ls .heroku/python/lib/python2.7/site-packages/
