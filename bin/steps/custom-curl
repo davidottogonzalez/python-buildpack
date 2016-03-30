@@ -1,7 +1,7 @@
 bpwatch start custom-curl
 
 echo "Trying custom"
-ls -la
+ls .heroku/venv
 # sudo apt-get install -y libsasl2-dev
 echo "Done custom"
 
