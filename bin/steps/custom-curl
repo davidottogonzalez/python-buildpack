@@ -13,6 +13,8 @@ mv cyrus-sasl-2.1.26 $CACHE_DIR/.python-sasl/sasl
 cd $CACHE_DIR/.python-sasl/sasl
 ./configure --prefix=$CACHE_DIR/.python-sasl/lib-sasl > /dev/null
 make PROCESSEDEXAMPLEFILES="" install > /dev/null
+
+cd - > /dev/null
 # cp -a precompiled_python/* .heroku/python/lib/python2.7/site-packages/
 # ls .heroku/python/lib/python2.7/site-packages/
 # sudo apt-get install -y libsasl2-dev
